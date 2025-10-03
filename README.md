@@ -65,7 +65,7 @@ Untuk desainnya disini saya membuat 8 buah class dengan konsep Hierarchial, Mult
 dan untuk flow codenya :
 ## versi Cpp, Java, Python
 1. Inisialisasi Data dummy
-  - membuat 5 data dummy
+  - membuat data dummy
   - disimpan di dalam list
 2. Menu Utama
   - program memasuki while loop dengan pilihan switch case berupa angka 1/2/3
@@ -84,10 +84,10 @@ dan untuk flow codenya :
 
 # Dokumentasi Program Berhasil Berjalan
  ## Cpp
-
+<img width="1714" height="480" alt="image" src="https://github.com/user-attachments/assets/213fadbe-320b-4a38-b64a-4a2e2a972598" />
 
  ## Java
-
+<img width="1870" height="452" alt="image" src="https://github.com/user-attachments/assets/76d5dc3a-b05c-422a-befc-2f578f2194b2" />
 
  ## Python
-
+<img width="1403" height="365" alt="image" src="https://github.com/user-attachments/assets/265f097d-7e56-433b-b217-30e7d003a8c6" />
