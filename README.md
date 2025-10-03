@@ -2,30 +2,66 @@
 Saya Naufal Zahid dengan NIM 2405787 mengerjakan TP 3 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 
 # Diagram
-
+<img width="751" height="834" alt="_tp 3 drawio" src="https://github.com/user-attachments/assets/d13746a9-6d23-40d5-91a7-6a9999118552" />
 
 # Penjelasan Desain dan Flow Code
-Untuk desainnya disini saya membuat 3 buah class dengan konsep multilevel inheritance :
-1. Class AlatElektronik (Parent Class)
+Untuk desainnya disini saya membuat 8 buah class dengan konsep Hierarchial, Multiple, dan Hybrid Inheritance :
+1. Class Hewan (Parent Class)
   - Atribut :
-    - IdProduk
     - Nama
-    - Harga
-    - Stok
-    - Foto_Produk
-2. Class PerangkatAudioVisual (child dari AlatElektronik)
-  - Mewarisi semua atribut dari AlatElektronik
+    - Umur
+    - Berat
+  - Method :
+      - GetSpecificInfo (Override): memberikan detail spesifik jenis hewan
+      - GetInfoDasar : Mengembalikan info dasar hewan (Nama, Umur, Berat).
+2. Class HewanDarat (child dari Hewan)
+  - Mewarisi semua atribut dari Hewan
   - Tambahan atribut :
-      - Tipe
-      - Merk
-      - Daya
-3. Class Speaker (child dari PerangkatAudioVisual)
-  - Mewarisi semua atribut dari AlatElektronik dan PerangkatAudioVisual
+      - JumlahKaki
+      - JenisKulit
+      - JenisBulu
+  - Method :
+      - GetSpecificInfo (Override dari Hewan): memberikan detail spesifik jenis hewan ddarat
+3. Class HewanAir (child dari Hewan)
+  - Mewarisi semua atribut dari Hewan
   - Tambahan atribut :
-      - JenisSpeaker
-      - FrekuensiRespon
-      - Impedansi
-
+      - JenisAir
+      - PanjangTubuh
+      - KecepatanRenang
+  - Method :
+      - GetSpecificInfo (Override dari Hewan): memberikan detail spesifik jenis hewan air
+4. Class Unggas (child dari Hewan)
+  - Mewarisi semua atribut dari Hewan
+  - Tambahan atribut :
+      - PanjangSayap
+      - WarnaBulu
+      - BisaTerbang
+  - Method :
+      - GetSpecificInfo (Override dari Hewan): memberikan detail spesifik jenis hewan Unggas
+5. Class HewanAmfibi (child dari HewanDarat dan HewanAir)
+  - Mewarisi semua atribut dari Hewan, HewanDarat dan HewanAir
+  - Tambahan atribut :
+      - JenisAmfibi
+      - Boolean
+  - Method :
+      - GetSpecificInfo (Override dari Hewan): memberikan detail spesifik jenis hewan
+6. Class Pemilik (Memiliki Hubungan Agregasi dengan Hewan)
+  - Data Hewan Akan tetap ada meski class pemilik dihapus
+  - Atribut :
+      - Nama
+      - Alamat
+      - NoTelepon
+  - Method :
+    - GetinfoSingkat : untuk mengembalikan ringkasan nama dan nomor telepon pemilik
+7. Class KebunBinatang (Composite dengan Hewan)
+  - Mewarisi semua atribut dari Hewan
+  - Tambahan atribut :
+      - JenisAir
+      - PanjangTubuh
+      - KecepatanRenang
+  - Method :
+      - TampilkanHewan : Menampilkan seluruh koleksi hewan dalam format tabel
+      - TambahHewan : Menambahkan Hewan Ke objek list
 dan untuk flow codenya :
 ## versi Cpp, Java, Python
 1. Inisialisasi Data dummy
@@ -45,9 +81,6 @@ dan untuk flow codenya :
 5. Keluar Program 
   - Program akan berhenti
     
-## versi PHP
-- Menampilkan Data yang ada dengan tabel
-- Bisa Menambahkan Data
 
 # Dokumentasi Program Berhasil Berjalan
  ## Cpp
@@ -58,6 +91,3 @@ dan untuk flow codenya :
 
  ## Python
 
-
- ## PHP
- 
