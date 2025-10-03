@@ -5,7 +5,7 @@ Saya Naufal Zahid dengan NIM 2405787 mengerjakan TP 3 dalam mata kuliah Desain d
 <img width="751" height="834" alt="_tp 3 drawio" src="https://github.com/user-attachments/assets/d13746a9-6d23-40d5-91a7-6a9999118552" />
 
 # Penjelasan Desain dan Flow Code
-Untuk desainnya disini saya membuat 8 buah class dengan konsep Hierarchial, Multiple, dan Hybrid Inheritance :
+Untuk desainnya disini saya membuat 7 buah class dengan konsep Hierarchial, Multiple, dan Hybrid Inheritance :
 1. Class Hewan (Parent Class)
   - Atribut :
     - Nama
